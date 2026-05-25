@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colombia Viva - Inicio</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="data:,">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Colombia Viva</div>
+        <nav>
+            <a href="index.html">Donde ir</a>
+
+            <!-- MENU DESPLEGABLE DE FESTIVALES -->
+            <span id="menu-festivales" style="position:relative; cursor:pointer; color:white; margin-left:20px; font-size:16px;">
+                Festivales ▾
+                <div id="submenu-festivales" style="
+                    display: none;
+                    position: absolute;
+                    top: 25px;
+                    left: 0;
+                    background-color: white;
+                    border-radius: 8px;
+                    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+                    min-width: 200px;
+                    z-index: 100;
+                ">
+                    <a href="festivales.html" style="display:block; padding:10px 15px; color:#003893; border-bottom:1px solid #eee;">Todos los festivales</a>
+                    <a href="carnaval.html" style="display:block; padding:10px 15px; color:#003893; border-bottom:1px solid #eee;">Carnaval de Barranquilla</a>
+                    <a href="flores.html" style="display:block; padding:10px 15px; color:#003893; border-bottom:1px solid #eee;">Feria de las Flores</a>
+                    <a href="cali.html" style="display:block; padding:10px 15px; color:#003893;">Feria de Cali</a>
+                </div>
+            </span>
+
+            <a href="galeria.html">Galeria</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- MENSAJE DE BIENVENIDA -->
+        <div style="background-color:#FCD116; text-align:center; padding:12px; font-weight:bold; font-size:16px; color:#003893;">
+            <p id="saludo">Bienvenido a Colombia Viva</p>
+        </div>
+
+       <!-- SLIDER DE IMAGENES -->
+<div style="position:relative; background-color:#003893; text-align:center;">
+
+    <div class="slide" style="position:relative;">
+        <img src="images/carnaval2.webp" alt="Carnaval de Barranquilla" style="width:100%; height:420px; object-fit:cover; opacity:0.7; display:block;">
+        <div style="position:absolute; bottom:60px; left:0; right:0; color:white; font-size:28px; font-weight:bold; text-shadow:2px 2px 6px rgba(0,0,0,0.8);">
+            Carnaval de Barranquilla
+        </div>
+    </div>
+
+    <div class="slide" style="position:relative;">
+        <img src="images/flores2.webp" alt="Feria de las Flores" style="width:100%; height:420px; object-fit:cover; opacity:0.7; display:block;">
+        <div style="position:absolute; bottom:60px; left:0; right:0; color:white; font-size:28px; font-weight:bold; text-shadow:2px 2px 6px rgba(0,0,0,0.8);">
+            Feria de las Flores
+        </div>
+    </div>
+
+    <div class="slide" style="position:relative;">
+        <img src="images/cali.1.webp" alt="Feria de Cali" style="width:100%; height:420px; object-fit:cover; opacity:0.7; display:block;">
+        <div style="position:absolute; bottom:60px; left:0; right:0; color:white; font-size:28px; font-weight:bold; text-shadow:2px 2px 6px rgba(0,0,0,0.8);">
+            Feria de Cali
+        </div>
+    </div>
+
+    <!-- Botones del slider -->
+    <button id="btn-anterior" style="
+        position:absolute; top:50%; left:15px;
+        transform:translateY(-50%);
+        background:rgba(255,255,255,0.8);
+        border:none; border-radius:50%;
+        width:40px; height:40px;
+        font-size:18px; cursor:pointer;">❮</button>
+
+    <button id="btn-siguiente" style="
+        position:absolute; top:50%; right:15px;
+        transform:translateY(-50%);
+        background:rgba(255,255,255,0.8);
+        border:none; border-radius:50%;
+        width:40px; height:40px;
+        font-size:18px; cursor:pointer;">❯</button>
+
+</div>
+
+            <!-- Botones del slider -->
+            <button id="btn-anterior" style="
+                position:absolute; top:50%; left:15px;
+                transform:translateY(-50%);
+                background:rgba(255,255,255,0.8);
+                border:none; border-radius:50%;
+                width:40px; height:40px;
+                font-size:18px; cursor:pointer;">❮</button>
+
+            <button id="btn-siguiente" style="
+                position:absolute; top:50%; right:15px;
+                transform:translateY(-50%);
+                background:rgba(255,255,255,0.8);
+                border:none; border-radius:50%;
+                width:40px; height:40px;
+                font-size:18px; cursor:pointer;">❯</button>
+
+        </div>
+
+        <!-- FESTIVALES DESTACADOS -->
+        <section>
+            <h2>Festivales destacados</h2>
+            <p class="subtitulo">Celebraciones Patrimonio de la Humanidad</p>
+
+            <div class="cards">
+
+                <div class="card">
+                    <img src="images/carnaval2.webp" alt="Carnaval de Barranquilla" loading="lazy">
+                    <div class="info">
+                        <h3>Carnaval de Barranquilla</h3>
+                        <p>El segundo carnaval mas grande del mundo, declarado Patrimonio por la UNESCO.</p>
+                        <a href="carnaval.html">Ver mas</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/flores2.webp" alt="Feria de las Flores de Medellin" loading="lazy">
+                    <div class="info">
+                        <h3>Feria de las Flores</h3>
+                        <p>Una explosion de color donde los silleteros llevan enormes arreglos florales.</p>
+                        <a href="flores.html">Ver mas</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/cali.1.webp" alt="Feria de Cali" loading="lazy">
+                    <div class="info">
+                        <h3>Feria de Cali</h3>
+                        <p>La fiesta de la salsa mas importante de America Latina.</p>
+                        <a href="cali.html">Ver mas</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- DESTINOS -->
+        <section class="destinos">
+            <h2>Destinos en Colombia</h2>
+            <p class="subtitulo">Lugares que te quitaran el aliento</p>
+
+            <div class="grid-destinos">
+                <div class="destino">Cartagena</div>
+                <div class="destino">Medellin</div>
+                <div class="destino">Bogota</div>
+                <div class="destino">San Andres</div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div>
+            <h4>Contacto</h4>
+            <a href="contacto.html">Formulario de contacto</a>
+            <p>marianramirez134@gmail.com</p>
+        </div>
+        <div>
+            <h4>Redes sociales</h4>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">YouTube</a>
+        </div>
+        <div>
+            <h4>2026</h4>
+            <p>Colombia Viva</p>
+            <p>Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <!-- ARCHIVO JAVASCRIPT -->
+<script src="Js/script.js"></script>
+</body>
+</html>
